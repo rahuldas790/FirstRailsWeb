@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <script type="text/javascript">
+      function clickMe(){
+        var paragraph = document.getElementById("btn");
+        paragraph.innerHTML = "Yeah!!, button click worked."
+      }
+    </script>
   </head>
   <body>
     <h1>This is the home page</h1>
+    <p id="btn">Just testing a Button click from JavaScript</p>
     <form  action="index.html" method="post">
       <ul>
         <li>Hey buddy</li>
       </ul>
     </form>
+    <button type="button" name="button" onclick="clickMe()">Click to see efffect!</button>
   </body>
 </html>
